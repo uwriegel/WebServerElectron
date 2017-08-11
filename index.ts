@@ -3,10 +3,15 @@ var app = express()
 
 import fs = require('fs')
 import https = require('https')
-var options = { 
-    key: fs.readFileSync('server-key.pem'), 
-    cert: fs.readFileSync('server-crt.pem'), 
-    ca: fs.readFileSync('ca-crt.pem'), 
+// var options = { 
+//     key: fs.readFileSync('server-key.pem'), 
+//     cert: fs.readFileSync('server-crt.pem'), 
+//     // ca: fs.readFileSync('ca-crt.pem'), 
+// }
+
+var options = {
+    pfx: fs.readFileSync('riegel.selfhost.eu.pfx'),
+    passphrase: 'caesar'
 }
 
 app.use(express.static('web'))
