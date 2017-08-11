@@ -1,0 +1,28 @@
+Verzeichnis WebServer anlegen und öffnen
+Quellcodeverwaltung: Repository anlegen
+Commit
+
+Konsole öffnen Strg-ö
+npm init -y
+(npm install @types/node –-save)
+
+express:
+npm install express --save
+
+alles unter node_modules markieren und in .gitignore hinzufügen
+.gitignore speichern
+3 Änderungen werden angezeigt
+
+npm install @types/express --save
+alles unter node_modules markieren und in .gitignore hinzufügen
+.gitignore speichern
+3 Änderungen werden angezeigt
+
++ index.ts und codieren
+Verzeichnis web anlegen und Beispielswebseite anlegen
+Commit
+
+
+F5: node.js auswählen
+
+localhost
