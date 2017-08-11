@@ -20,9 +20,13 @@ alles unter node_modules markieren und in .gitignore hinzufügen
 
 + index.ts und codieren
 Verzeichnis web anlegen und Beispielswebseite anlegen
+CTRL+K S
 Commit
 
+tsconfig.json anlegen
+CTRL+K S
+.js und .map zu .gitignore hinzufügen
 
-F5: node.js auswählen
+debugger links auswählen
+Konfiguration anlegen: Node.js, An Prozess anhängen
 
-localhost

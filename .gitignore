@@ -279,3 +279,5 @@ node_modules/@types/serve-static/index.d.ts
 node_modules/@types/serve-static/package.json
 node_modules/@types/serve-static/README.md
 node_modules/@types/serve-static/types-metadata.json
+index.js
+index.js.map
