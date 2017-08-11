@@ -1,13 +1,9 @@
 import express = require('express')
 var app = express()
 
+import speedy = require('spdy')
 import fs = require('fs')
-import https = require('https')
-// var options = { 
-//     key: fs.readFileSync('server-key.pem'), 
-//     cert: fs.readFileSync('server-crt.pem'), 
-//     // ca: fs.readFileSync('ca-crt.pem'), 
-// }
+import compression = require('compression')
 
 var options = {
     pfx: fs.readFileSync('riegel.selfhost.eu.pfx'),
@@ -15,15 +11,11 @@ var options = {
 }
 
 app.use(express.static('web'))
+app.use(compression())
 
 app.get('/humbug', (req, res) => {
     res.send('Hello Humbug!')
 })
 
-// app.listen(80, () => {
-//     console.log("Webserver listening on HTTP")
-// })
+speedy.createServer(options, app).listen(443)
 
-https.createServer(options, app).listen(443, () => {
-    console.log("Webserver listening on HTTPS")
-})

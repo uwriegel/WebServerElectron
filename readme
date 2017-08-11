@@ -30,3 +30,7 @@ CTRL+K S
 debugger links auswählen
 Konfiguration anlegen: Node.js, An Prozess anhängen
 
+npm install spdy --save
+npm install @types/spdy --save
+npm install compression --save
+npm install @types/compression --save
