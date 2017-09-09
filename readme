@@ -4,7 +4,7 @@ Commit
 
 Konsole öffnen Strg-ö
 npm init -y
-npm install @types/node –-save
+(npm install @types/node –-save)
 
 express:
 npm install express --save
