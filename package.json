@@ -1,7 +1,7 @@
 {
   "name": "webserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "Verzeichnis WebServer anlegen und öffnen Quellcodeverwaltung: Repository anlegen Commit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,10 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "@types/compression": "0.0.33",
-    "@types/express": "^4.0.36",
+    "@types/express": "^4.0.37",
     "@types/spdy": "^3.4.2",
     "compression": "^1.7.0",
     "express": "^4.15.4",
     "spdy": "^3.4.7"
-  }
+  },
+  "keywords": []
 }

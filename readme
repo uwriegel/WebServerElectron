@@ -4,7 +4,7 @@ Commit
 
 Konsole öffnen Strg-ö
 npm init -y
-(npm install @types/node –-save)
+npm install @types/node –-save
 
 express:
 npm install express --save
@@ -19,6 +19,10 @@ alles unter node_modules markieren und in .gitignore hinzufügen
 3 Änderungen werden angezeigt
 
 + index.ts und codieren
+
+in index.d.ts folgendes einfügen:
+export function createServer(options: ServerOptions, app: any): Server
+
 Verzeichnis web anlegen und Beispielswebseite anlegen
 CTRL+K S
 Commit
