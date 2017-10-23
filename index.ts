@@ -5,11 +5,9 @@ import speedy = require('spdy')
 import fs = require('fs')
 import compression = require('compression')
 
-var sslPath = '/etc/letsencrypt/live/riegel.selfhost.eu/'
-
 var options = {  
-    key: fs.readFileSync(sslPath + 'privkey.pem'),
-    cert: fs.readFileSync(sslPath + 'fullchain.pem')
+    key: fs.readFileSync('./server-key.pem'),
+    cert: fs.readFileSync('./server-crt.pem')
 }
 
 app.use(express.static('web'))
